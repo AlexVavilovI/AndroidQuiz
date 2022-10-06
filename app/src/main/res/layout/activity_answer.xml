@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/ic_input_add"
+    android:backgroundTint="@color/teal_200"
+    tools:context=".ActivityAnswerA">
+
+    <TextView
+        android:id="@+id/RightAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Правильный ответ . Вы молодец ."
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickAnswerExit"
+        android:text=" К началу "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/RightAnswer"
+        app:layout_constraintStart_toStartOf="@+id/RightAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/RightAnswer" />
+</androidx.constraintlayout.widget.ConstraintLayout>

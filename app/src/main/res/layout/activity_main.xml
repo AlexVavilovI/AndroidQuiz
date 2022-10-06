@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Question1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Какой из двух официальных языков програмирования используется в в среде разработки &quot;Андроид&quot;"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/AnswerA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickAnswerA"
+        android:text="Котлин и Java"
+        app:layout_constraintEnd_toEndOf="@+id/Question1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Question1" />
+
+    <Button
+        android:id="@+id/AnswerB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickAnswerB"
+        android:text="Java и Python"
+        app:layout_constraintEnd_toEndOf="@+id/AnswerA"
+        app:layout_constraintStart_toStartOf="@+id/AnswerA"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerA" />
+
+    <Button
+        android:id="@+id/AnswerC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickAnswerC"
+        android:text="Котлин и Python"
+        app:layout_constraintEnd_toEndOf="@+id/AnswerB"
+        app:layout_constraintStart_toStartOf="@+id/AnswerB"
+        app:layout_constraintTop_toBottomOf="@+id/AnswerB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
